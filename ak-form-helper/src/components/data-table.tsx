@@ -319,7 +319,7 @@ const DataTable = ({ data }: DataTableProps) => {
 
   return (
     <div className="w-full">
-      <div className="flex items-center py-4">
+      <div className="flex items-center mb-4">
         <Input
           placeholder="Filter Part No..."
           value={filterInput}
