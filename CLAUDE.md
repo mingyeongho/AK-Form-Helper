@@ -11,8 +11,11 @@ This is a Tauri + React + TypeScript desktop application called "AK Form Helper"
 
 ## Development Commands
 
+All commands should be run from the `ak-form-helper/` directory. From the repository root, first run `cd ak-form-helper/`.
+
 ### Frontend Development
 ```bash
+cd ak-form-helper/
 pnpm dev              # Start Vite dev server (port 1420)
 pnpm build            # Build frontend (TypeScript + Vite)
 pnpm preview          # Preview production build
@@ -20,16 +23,19 @@ pnpm preview          # Preview production build
 
 ### Tauri Desktop App
 ```bash
+cd ak-form-helper/
 pnpm tauri dev        # Run app in development mode (starts Vite dev server automatically)
 pnpm tauri build      # Build production desktop app
 ```
 
 ### Rust Backend
 ```bash
-cd src-tauri
+cd ak-form-helper/src-tauri/
 cargo build           # Build Rust backend
 cargo check           # Check Rust code without building
 cargo test            # Run Rust tests
+cargo clippy          # Lint Rust code
+cargo fmt             # Format Rust code
 ```
 
 ## Git Commit Convention
